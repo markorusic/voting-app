@@ -1,10 +1,5 @@
 @extends('layouts.app')
 
-
-@section('styles')
-    <link rel="stylesheet" href="{{ URL::to('/') }}/css/poll.css">
-@endsection
-
 @section('content')
 
 <div class="container">
@@ -20,8 +15,10 @@
 	            	</h3>
 
 	            	@if($poll->voted)
-
-		            	<canvas id="chart-area"></canvas>
+						
+						<div>
+		            		<canvas id="chart-area"></canvas>
+		            	</div>
 
 		            @else
 		            	<ul class="choices">
@@ -87,7 +84,8 @@
 		            labels: data.map(e => e.title)
 		        },
 		        options: {
-		            responsive: true
+		            responsive: true,
+		            maintainAspectRatio: false
 		        }
 		    };
 

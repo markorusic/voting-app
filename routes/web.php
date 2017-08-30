@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+	if(Auth::guest())
+		return view('welcome');	
+	return redirect()->route('dashboard');
+
 });
 
 Route::get('/polls', 'PollController@index')->name('polls');
