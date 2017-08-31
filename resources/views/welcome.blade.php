@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2" style="text-align: center">
-            <h1 style="padding-top: 50px;">Wellcome to our voting app</h1>  
+            <h1 style="padding-top: 50px;">Wellcome to poll app</h1>  
 
             <br><br>
 

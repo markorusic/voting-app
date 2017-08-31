@@ -39,13 +39,13 @@
 					@if(!$poll->voted)		
 	            		<button class="btn btn-success" id='vote' style="float: left;">Vote</button>	            	
 	            	@endif
-	            	<button class="btn btn-primary" id='share' 
+	            	<!-- <button class="btn btn-primary" id='share' 
 
 						@if(!$poll->voted)
 							style="float:right;"
 						@endif
 
-	            	>Copy link of this poll</button>
+	            	>Copy link of this poll</button> -->
 	        	</div>
 	    	</div>
 		</div>

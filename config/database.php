@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -65,6 +65,9 @@ return [
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
+
+            //Modyfied
+            // 'schema'   => env('DB_PGSQL_SCHEMA','public'),
         ],
 
         'sqlsrv' => [
@@ -75,7 +78,7 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
-            'prefix' => '',
+            'prefix' => '',            
         ],
 
     ],
